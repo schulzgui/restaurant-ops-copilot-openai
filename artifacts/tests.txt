@@ -1,0 +1,39 @@
+test_approval_required_and_once_delivery (test_core.CoreTests) ... ok
+test_audit_detects_tampering (test_core.CoreTests) ... ok
+test_concurrent_proposals (test_core.CoreTests) ... ok
+test_dead_letter_and_manual_requeue (test_core.CoreTests) ... ok
+test_evidence_gate (test_core.CoreTests) ... ok
+test_idempotency_and_conflict (test_core.CoreTests) ... ok
+test_invalid_policy_and_template (test_core.CoreTests) ... ok
+test_llm_contract_end_to_end (test_core.CoreTests) ... ok
+test_llm_is_required (test_core.CoreTests) ... ok
+test_rejected_and_repeated_review (test_core.CoreTests) ... ok
+test_seed_is_preserved_on_restart (test_core.CoreTests) ... ok
+test_stale_dispatch (test_core.CoreTests) ... ok
+test_stale_review (test_core.CoreTests) ... ok
+test_unknown_and_additional_tool_args (test_core.CoreTests) ... ok
+test_authentication (test_http.HTTPTests) ... ok
+test_cross_origin_and_host (test_http.HTTPTests) ... ok
+test_empty_prompt (test_http.HTTPTests) ... ok
+test_evaluation (test_http.HTTPTests) ... ok
+test_full_workflow (test_http.HTTPTests) ... ok
+test_role_separation (test_http.HTTPTests) ... ok
+test_static_and_traversal (test_http.HTTPTests) ... ok
+test_hallucinated_policy_rejected (test_llm.LLMTests) ... ok
+test_incomplete_response (test_llm.LLMTests) ... ok
+test_loop_budget (test_llm.LLMTests) ... ok
+test_model_cannot_approve (test_llm.LLMTests) ... ok
+test_multistep_contract (test_llm.LLMTests) ... ok
+test_retry_and_redaction (test_llm.LLMTests) ... ok
+test_transport_schema (test_llm.LLMTests) ... ok
+test_common_sensitive_patterns (test_privacy.PrivacyTests) ... ok
+test_fake_citation_rejected (test_privacy.PrivacyTests) ... ok
+test_model_sensitive_argument_not_logged (test_privacy.PrivacyTests) ... ok
+test_redirect_blocked (test_privacy.PrivacyTests) ... ok
+test_rejection_before_provider_and_storage (test_privacy.PrivacyTests) ... ok
+test_safe_ids (test_privacy.PrivacyTests) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 0.796s
+
+OK

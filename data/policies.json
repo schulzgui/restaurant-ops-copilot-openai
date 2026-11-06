@@ -1,0 +1,37 @@
+[
+  {
+    "id": "P-DELAY",
+    "title": "Atraso",
+    "version": 1,
+    "text": "Pedidos ativos com atraso positivo podem receber uma atualização de status. Nunca prometer novo prazo ou compensação sem confirmação. Atrasos de 20 minutos ou mais exigem escalonamento.",
+    "templates": [
+      "delay_update",
+      "escalate"
+    ]
+  },
+  {
+    "id": "P-SAFETY",
+    "title": "Segurança alimentar",
+    "version": 1,
+    "text": "Relato de alergia, intoxicação ou alimento estragado exige escalonamento urgente para equipe humana. Não diagnosticar e não decidir reembolso.",
+    "templates": [
+      "escalate"
+    ]
+  },
+  {
+    "id": "P-MISSING",
+    "title": "Item ausente",
+    "version": 1,
+    "text": "Item faltante ou pedido incompleto exige conferência humana dos itens e do comprovante. Sem promessa automática de reembolso.",
+    "templates": [
+      "missing_review"
+    ]
+  },
+  {
+    "id": "P-REVIEW",
+    "title": "Revisão e execução",
+    "version": 1,
+    "text": "Toda proposta precisa de aprovação explícita de um operador. O modelo não aprova, não envia mensagens reais e não movimenta dinheiro. A execução deste laboratório grava apenas um recibo simulado.",
+    "templates": []
+  }
+]

@@ -1,0 +1,16 @@
+.secrets.json
+.env
+.env.*
+!.env.example
+runtime/
+*.sqlite*
+*.db
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+build/
+dist/
+.DS_Store
+artifacts/evaluation-live.json
+artifacts/live-smoke.json

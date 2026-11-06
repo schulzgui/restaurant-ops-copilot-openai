@@ -1,0 +1,21 @@
+services:
+  copilot:
+    build: .
+    ports:
+      - "127.0.0.1:8004:8004"
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY:?Configure OPENAI_API_KEY}
+      OPENAI_MODEL: ${OPENAI_MODEL:?Configure OPENAI_MODEL}
+      OPS_OPERATOR_TOKEN: ${OPS_OPERATOR_TOKEN:?Configure OPS_OPERATOR_TOKEN}
+      OPS_REVIEWER_TOKEN: ${OPS_REVIEWER_TOKEN:?Configure OPS_REVIEWER_TOKEN}
+    volumes:
+      - copilot-data:/app/runtime
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+volumes:
+  copilot-data:
