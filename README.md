@@ -166,23 +166,5 @@ docs/             arquitetura, API, implantação, privacidade e validação
 runtime/          banco local (não versionado)
 ```
 
-## Limitações explícitas
 
-- Não inclui integração real de mensageria, pagamentos ou sistemas do iFood. O destino de execução é simulado por desenho.
-- Não há SSO, gestão de usuários, TLS público ou isolamento multiempresa. Tokens locais representam papéis, não identidades individuais verificadas.
-- SQLite e o servidor HTTP padrão são adequados ao laboratório local; exposição pública requer outra camada de serviço e controles operacionais.
-- A busca lexical e quatro políticas não equivalem a recuperação semântica em escala. Citar uma fonte consultada não garante que a conclusão esteja semanticamente correta.
-- A cadeia de hashes detecta alterações simples; um administrador com controle do banco pode reescrever a cadeia inteira. Não é auditoria inviolável.
-- Os casos foram criados para o laboratório, não por avaliadores independentes. Não há estudo com usuários ou impacto comercial medido.
 
-## Publicação
-
-Nome sugerido: **restaurant-ops-copilot**. Descrição curta: “Copiloto operacional com OpenAI, ferramentas controladas, aprovação humana, outbox transacional e auditoria. Avaliação reproduzível com dados sintéticos.”
-
-Crie um repositório vazio, execute a verificação de release e publique apenas o conteúdo deste projeto. [Passo a passo](docs/PUBLICACAO.md). A criação dos arquivos não significa que o repositório remoto já foi publicado.
-
-## Referências e licença
-
-Integração baseada na documentação oficial de [function calling](https://developers.openai.com/api/docs/guides/function-calling) e [Structured Outputs](https://developers.openai.com/api/docs/guides/structured-outputs), consultada em 6 de novembro de 2026.
-
-[Licença MIT](LICENSE).
